@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MINDEASE Design System - Stress Relief & Wellness Colors */
+
+@layer base {
+  :root {
+    /* Background & Surface Colors */
+    --background: 210 17% 98%;
+    --foreground: 210 15% 20%;
+    --surface: 210 25% 96%;
+    
+    /* Card & Panel Colors */
+    --card: 210 25% 98%;
+    --card-foreground: 210 15% 25%;
+    --card-hover: 210 30% 95%;
+
+    /* Interactive Elements */
+    --popover: 210 25% 98%;
+    --popover-foreground: 210 15% 25%;
+
+    /* Brand Colors - Calming & Stress Relief */
+    --primary: 210 80% 55%;          /* Calming Blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 100% 85%;
+    --primary-dark: 210 80% 45%;
+
+    /* Wellness Colors */
+    --wellness: 142 76% 45%;         /* Healing Green */
+    --wellness-foreground: 0 0% 100%;
+    --wellness-light: 142 60% 85%;
+    
+    --calm: 260 60% 65%;             /* Meditation Purple */
+    --calm-foreground: 0 0% 100%;
+    --calm-light: 260 40% 90%;
+
+    --energy: 32 95% 60%;            /* Motivation Orange */
+    --energy-foreground: 0 0% 100%;
+    --energy-light: 32 75% 88%;
+
+    /* Secondary & Support Colors */
+    --secondary: 210 25% 92%;
+    --secondary-foreground: 210 15% 35%;
+
+    --muted: 210 15% 92%;
+    --muted-foreground: 210 10% 50%;
+
+    --accent: 142 50% 88%;
+    --accent-foreground: 142 60% 25%;
+
+    /* Status Colors */
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 32 95% 60%;
+    --warning-foreground: 0 0% 100%;
+    
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Interactive States */
+    --border: 210 25% 88%;
+    --input: 210 25% 94%;
+    --ring: 210 80% 55%;
+    --focus: 210 80% 55%;
+
+    /* Gradients for Wellness */
+    --gradient-primary: linear-gradient(135deg, hsl(210 80% 55%), hsl(142 76% 45%));
+    --gradient-calm: linear-gradient(135deg, hsl(260 60% 65%), hsl(210 80% 55%));
+    --gradient-energy: linear-gradient(135deg, hsl(32 95% 60%), hsl(142 76% 45%));
+    --gradient-background: linear-gradient(180deg, hsl(210 25% 98%), hsl(210 20% 95%));
+
+    /* Shadows & Effects */
+    --shadow-soft: 0 2px 12px -2px hsl(210 15% 20% / 0.08);
+    --shadow-medium: 0 4px 24px -4px hsl(210 15% 20% / 0.12);
+    --shadow-strong: 0 8px 32px -8px hsl(210 15% 20% / 0.16);
+    --shadow-glow: 0 0 20px hsl(210 80% 55% / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode - Night Theme for Stress Relief */
+    --background: 210 15% 8%;
+    --foreground: 210 20% 92%;
+    --surface: 210 15% 12%;
+    
+    --card: 210 15% 10%;
+    --card-foreground: 210 20% 90%;
+    --card-hover: 210 15% 15%;
+
+    --popover: 210 15% 10%;
+    --popover-foreground: 210 20% 90%;
+
+    /* Adjusted Brand Colors for Dark Mode */
+    --primary: 210 70% 65%;
+    --primary-foreground: 210 15% 8%;
+    --primary-light: 210 60% 75%;
+    --primary-dark: 210 70% 55%;
+
+    --wellness: 142 60% 55%;
+    --wellness-foreground: 210 15% 8%;
+    --wellness-light: 142 40% 70%;
+    
+    --calm: 260 50% 70%;
+    --calm-foreground: 210 15% 8%;
+    --calm-light: 260 30% 80%;
+
+    --energy: 32 85% 65%;
+    --energy-foreground: 210 15% 8%;
+    --energy-light: 32 65% 80%;
+
+    --secondary: 210 15% 18%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 210 10% 20%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 142 30% 25%;
+    --accent-foreground: 142 60% 85%;
+
+    /* Dark Mode Status Colors */
+    --success: 142 60% 55%;
+    --success-foreground: 210 15% 8%;
+    
+    --warning: 32 85% 65%;
+    --warning-foreground: 210 15% 8%;
+    
+    --destructive: 0 60% 60%;
+    --destructive-foreground: 210 15% 8%;
+
+    --border: 210 15% 20%;
+    --input: 210 15% 15%;
+    --ring: 210 70% 65%;
+    --focus: 210 70% 65%;
+
+    /* Dark Mode Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 70% 65%), hsl(142 60% 55%));
+    --gradient-calm: linear-gradient(135deg, hsl(260 50% 70%), hsl(210 70% 65%));
+    --gradient-energy: linear-gradient(135deg, hsl(32 85% 65%), hsl(142 60% 55%));
+    --gradient-background: linear-gradient(180deg, hsl(210 15% 8%), hsl(210 12% 12%));
+
+    /* Dark Mode Shadows */
+    --shadow-soft: 0 2px 12px -2px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 4px 24px -4px hsl(0 0% 0% / 0.4);
+    --shadow-strong: 0 8px 32px -8px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 20px hsl(210 70% 65% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
